@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+/* ====== GENERAL ====== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    color: #222;
+}
+
+/* ====== BARRA VERDE ESTILO HALO ====== */
+.top-bar {
+    background-color: #107c10;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 5px solid #0d5f0d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 48px;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.4);
+}
+
+/* ====== NAVEGACIÓN ====== */
+.nav-header {
+    background: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #107c10;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #0d5f0d;
+}
+
+/* ====== HERO ====== */
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn-primary {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #107c10;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #0d5f0d;
+}
+
+/* ====== CATÁLOGO ====== */
+.catalogo h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #107c10;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 35px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+/* PRODUCTOS */
+.producto {
+    background: #fafafa;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+}
+
+.producto img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.producto h3 {
+    margin: 12px 0 5px;
+    font-size: 20px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #107c10;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.producto button {
+    width: 100%;
+    padding: 12px;
+    background-color: #107c10;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: bold;
+}
+
+.producto button:hover {
+    background-color: #0d5f0d;
+}
+
+/* ====== CONTACTO ====== */
+.contacto h2 {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    color: #107c10;
+    font-size: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+form input,
+form textarea {
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+form textarea {
+    min-height: 120px;
+}
+
+form button {
+    padding: 14px;
+    background-color: #107c10;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #0d5f0d;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: #107c10;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 50px;
+    border-top: 5px solid #0d5f0d;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
